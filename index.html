@@ -15,11 +15,10 @@
       --orange-pale:rgba(232,112,48,.10);
       --red:#E05050; --green:#3EC48A;
       --line:rgba(255,255,255,.09); --line-warm:rgba(232,112,48,.18);
-      --radius:20px; --max:680px; --section-pad:80px;
+      --radius:20px; --max:680px; --section-pad:56px;
     }
     *{box-sizing:border-box;margin:0;padding:0;}
     html {
-      scroll-behavior: smooth;
       overflow-y: scroll;
     }
     body {
@@ -31,7 +30,6 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
     }
     img{display:block;max-width:100%;height:auto;}
     a{text-decoration:none;color:inherit;}
@@ -71,7 +69,7 @@
     /* ── BUTTON ── */
     .btn{
       display:flex;align-items:center;justify-content:center;
-      width:100%;min-height:62px;padding:18px 28px;border-radius:14px;
+      width:100%;min-height:54px;padding:14px 24px;border-radius:14px;
       background:linear-gradient(160deg,#E8824A 0%,#C85A18 60%,#A84510 100%);
       color:#fff;font-family:"DM Sans",sans-serif;font-weight:700;
       font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;
@@ -217,7 +215,7 @@
 
     /* ── PROOF ── */
     .proof{background:var(--bg);padding:var(--section-pad) 0;}
-    .proof-headline{font-family:"Playfair Display",serif;font-size:clamp(2rem,9vw,3.2rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--white);text-align:center;margin-bottom:8px;}
+    .proof-headline{font-family:"Playfair Display",serif;font-size:clamp(1.6rem,7vw,3.2rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--white);text-align:center;margin-bottom:8px;}
     .proof-headline em{font-style:italic;color:var(--orange);}
     .proof-sub{text-align:center;max-width:30ch;margin:0 auto 36px;color:var(--muted);font-size:.95rem;line-height:1.72;font-weight:300;}
     .proof-cards{display:grid;gap:20px;}
@@ -232,7 +230,7 @@
 
     /* ── PAIN ── */
     .pain{background:var(--bg);padding:var(--section-pad) 0;}
-    .pain-h2{font-size:clamp(2rem,9vw,3.2rem);font-weight:800;text-align:center;margin-bottom:32px;max-width:14ch;margin-inline:auto;}
+    .pain-h2{font-size:clamp(1.6rem,7vw,3.2rem);font-weight:800;text-align:center;margin-bottom:32px;max-width:14ch;margin-inline:auto;}
     .pain-card{background:var(--bg-brown);border:1px solid var(--line-warm);border-radius:var(--radius);padding:38px 28px;position:relative;overflow:hidden;}
     .pain-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 10%,var(--orange) 45%,var(--orange-light) 55%,transparent 90%);}
     .pain-label{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);background:var(--orange-pale);border:1px solid var(--line-warm);padding:7px 14px;border-radius:6px;margin-bottom:20px;}
@@ -241,7 +239,7 @@
 
     /* ── MISTAKES ── */
     .mistakes{background:var(--bg);padding:var(--section-pad) 0;}
-    .mistakes-h2{font-size:clamp(2rem,9vw,3.2rem);text-align:center;margin-bottom:32px;max-width:13ch;margin-inline:auto;}
+    .mistakes-h2{font-size:clamp(1.6rem,7vw,3.2rem);text-align:center;margin-bottom:32px;max-width:13ch;margin-inline:auto;}
     .mistakes-board{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
     .mistakes-board::before{content:"";display:block;height:2px;background:linear-gradient(90deg,transparent 10%,var(--orange) 45%,var(--orange-light) 55%,transparent 90%);}
     .mistakes-inner{padding:36px 26px 30px;}
@@ -255,7 +253,7 @@
 
     /* ── DON'T NEED ── */
     .dont-need{padding:var(--section-pad) 0;background:#F5F0E8;color:#1A1208;}
-    .dont-h2{font-size:clamp(2.2rem,10vw,3.6rem);text-align:center;margin-bottom:10px;max-width:11ch;margin-inline:auto;color:#1A1208;}
+    .dont-h2{font-size:clamp(1.7rem,8vw,3.6rem);text-align:center;margin-bottom:10px;max-width:11ch;margin-inline:auto;color:#1A1208;}
     .dont-h2 em{font-style:italic;color:var(--orange-2);}
     .dont-list{margin:28px 0;}
     .dont-item{display:flex;align-items:flex-start;gap:14px;padding:22px 0;border-bottom:1px solid rgba(0,0,0,.10);}
@@ -267,7 +265,7 @@
 
     /* ── TRIAD ── */
     .triad{padding:var(--section-pad) 0;background:linear-gradient(180deg,#0A0A0A 0%,#0E0906 50%,#0A0A0A 100%);}
-    .triad-h2{font-size:clamp(2rem,9vw,3.4rem);text-align:center;margin-bottom:32px;max-width:13ch;margin-inline:auto;}
+    .triad-h2{font-size:clamp(1.6rem,7vw,3.4rem);text-align:center;margin-bottom:32px;max-width:13ch;margin-inline:auto;}
     .triad-stack{display:grid;gap:20px;}
     .triad-card{border-radius:var(--radius);padding:34px 26px;position:relative;overflow:hidden;}
     .triad-card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
@@ -283,7 +281,7 @@
 
     /* ── FEATURES ── */
     .features{padding:var(--section-pad) 0;background:var(--bg);}
-    .features-h2{font-size:clamp(2rem,9vw,3.2rem);text-align:center;margin-bottom:36px;max-width:13ch;margin-inline:auto;}
+    .features-h2{font-size:clamp(1.6rem,7vw,3.2rem);text-align:center;margin-bottom:36px;max-width:13ch;margin-inline:auto;}
     .features-h2 em{font-style:italic;color:var(--orange);}
     .feature-block{background:var(--bg-brown);border:1px solid var(--line-warm);border-radius:var(--radius);padding:44px 32px;margin-bottom:28px;position:relative;overflow:hidden;}
     .feature-block::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--orange),transparent);opacity:.5;}
@@ -294,7 +292,7 @@
     /* ── STEPS ── */
     .steps{padding:var(--section-pad) 0;background:#0D0A07;}
     .steps-head{text-align:center;margin-bottom:40px;}
-    .steps-h2{font-size:clamp(2.2rem,10vw,3.6rem);margin-bottom:4px;}
+    .steps-h2{font-size:clamp(1.7rem,8vw,3.6rem);margin-bottom:4px;}
     .steps-h2-sub{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.5rem,6vw,2.4rem);color:var(--orange);font-weight:600;}
     .steps-intro{
       max-width:30ch;
@@ -315,7 +313,7 @@
 
     /* ── FOR SECTION ── */
     .for-section{background:#F5F0E8;padding:var(--section-pad) 0;color:#1A1208;}
-    .for-h2{font-size:clamp(2rem,9vw,3.2rem);color:#1A1208;text-align:center;margin-bottom:8px;max-width:13ch;margin-inline:auto;}
+    .for-h2{font-size:clamp(1.6rem,7vw,3.2rem);color:#1A1208;text-align:center;margin-bottom:8px;max-width:13ch;margin-inline:auto;}
     .for-sub{text-align:center;color:#7A6E5C;margin-bottom:32px;font-size:.96rem;line-height:1.7;font-weight:300;max-width:26ch;margin-inline:auto;}
     .for-card{background:#fff;border:1px solid rgba(232,112,48,.18);border-radius:var(--radius);overflow:hidden;margin-bottom:18px;position:relative;}
     .for-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--orange),transparent);}
@@ -420,7 +418,7 @@
       pointer-events:none;
     }
     .pricing-eyebrow{text-align:center;}
-    .pricing-h2{font-family:"Playfair Display",serif;font-size:clamp(2.8rem,12vw,4.6rem);font-weight:800;text-align:center;color:var(--white);margin:8px auto 16px;line-height:1.06;letter-spacing:-.02em;max-width:9ch;}
+    .pricing-h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,9vw,4.6rem);font-weight:800;text-align:center;color:var(--white);margin:8px auto 16px;line-height:1.06;letter-spacing:-.02em;max-width:9ch;}
     .pricing-sub{text-align:center;color:var(--muted);font-size:.96rem;line-height:1.72;font-weight:300;max-width:22ch;margin:0 auto 20px;}
 
     .pricing-promise{
@@ -496,7 +494,7 @@
 
     /* ── FAQ ── */
     .faq{background:#fff;padding:var(--section-pad) 0;color:#1A1208;}
-    .faq-h2{font-family:"Playfair Display",serif;font-size:clamp(2.2rem,10vw,3.6rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;text-align:center;color:#1A1208;margin-bottom:36px;}
+    .faq-h2{font-family:"Playfair Display",serif;font-size:clamp(1.7rem,8vw,3.6rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;text-align:center;color:#1A1208;margin-bottom:36px;}
     .faq-h2 em{font-style:italic;color:var(--orange);}
     .faq-item{border-bottom:1px solid rgba(0,0,0,.09);}
     .faq-item:first-child{border-top:1px solid rgba(0,0,0,.09);}
@@ -509,7 +507,7 @@
 
     /* ── FINAL ── */
     .final{background:var(--bg);padding:var(--section-pad) 0;text-align:center;}
-    .final-h2{font-size:clamp(2.4rem,11vw,4rem);margin-bottom:10px;max-width:9ch;margin-inline:auto;}
+    .final-h2{font-size:clamp(1.8rem,8vw,4rem);margin-bottom:10px;max-width:9ch;margin-inline:auto;}
     .final-accent{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.4rem,5vw,1.9rem);color:var(--orange-light);line-height:1.4;margin:0 auto 36px;max-width:28ch;font-weight:500;}
     .final-photo-old {
       background: transparent;
@@ -1155,6 +1153,41 @@
       z-index: 1;
     }
 
+
+  /* ── DESKTOP RESPONSIVE ── */
+  @media (min-width: 768px) {
+    :root {
+      --max: 860px;
+      --section-pad: 100px;
+    }
+    .nav { padding: 16px 48px; }
+    .hero-copy { max-width: 700px; padding: 0 64px 72px; }
+    .btn { width: auto; min-width: 320px; margin: 0 auto; font-size: .88rem; }
+    .dont-cta .btn, .final-cta .btn { width: auto; min-width: 340px; }
+    .fails-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .platform-cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .for-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; align-items: start; }
+    .proof-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .steps-list { max-width: 720px; margin: 0 auto; }
+    .mistakes-list { max-width: 680px; margin: 0 auto; }
+    .mentor-inner { display: flex; align-items: center; gap: 48px; text-align: left; }
+    .mentor-photo { flex-shrink: 0; width: 280px; }
+    .mentor-text { flex: 1; }
+    .mentor-title { text-align: left; margin-top: 0; }
+    .pain-h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
+    .mistakes-h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
+    .dont-h2 { font-size: clamp(2.6rem, 4.5vw, 4.2rem); }
+    .pricing-h2 { font-size: clamp(3rem, 5vw, 4.8rem); }
+    .final-h2 { font-size: clamp(2.8rem, 5vw, 4.4rem); }
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .final-cta { max-width: 480px; }
+    .footer-inner { flex-direction: row; justify-content: space-between; text-align: left; }
+  }
+
+  @media (min-width: 1100px) {
+    :root { --max: 960px; }
+  }
   </style>
 </head>
 <body>
@@ -1633,57 +1666,17 @@
 
 
 
-    // ── Ultra smooth scroll engine ──
-    (function() {
-      const ease = t => t < 0.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1;
-
-      let isScrolling = false;
-      let targetY = window.scrollY;
-      let currentY = window.scrollY;
-
-      function lerp(a, b, t) { return a + (b - a) * t; }
-
-      function smoothLoop() {
-        currentY = lerp(currentY, targetY, 0.082);
-        if (Math.abs(currentY - targetY) > 0.5) {
-          window.scrollTo(0, currentY);
-          requestAnimationFrame(smoothLoop);
-        } else {
-          window.scrollTo(0, targetY);
-          isScrolling = false;
-        }
-      }
-
-      window.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        targetY = Math.max(0, Math.min(
-          document.documentElement.scrollHeight - window.innerHeight,
-          targetY + e.deltaY * 1.2
-        ));
-        if (!isScrolling) {
-          isScrolling = true;
-          requestAnimationFrame(smoothLoop);
-        }
-      }, { passive: false });
-
-      // Smooth anchor links
+    // Smooth anchor scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
           e.preventDefault();
           const target = document.querySelector(anchor.getAttribute('href'));
           if (target) {
-            targetY = Math.min(
-              target.getBoundingClientRect().top + window.scrollY - 72,
-              document.documentElement.scrollHeight - window.innerHeight
-            );
-            if (!isScrolling) {
-              isScrolling = true;
-              requestAnimationFrame(smoothLoop);
-            }
+            const top = target.getBoundingClientRect().top + window.scrollY - 72;
+            window.scrollTo({ top, behavior: 'smooth' });
           }
         });
       });
-    })();
 
     // ── Scroll progress bar ──
     const progressBar = document.createElement('div');
